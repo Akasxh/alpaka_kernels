@@ -1,6 +1,8 @@
 #pragma once
 #include <alpaka/alpaka.hpp>
 
+// https://docs.pytorch.org/docs/stable/generated/torch.nn.SELU.html
+
 namespace alpaka_kernels {
 
 struct SeluKernel
