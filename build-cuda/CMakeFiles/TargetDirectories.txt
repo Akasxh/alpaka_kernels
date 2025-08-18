@@ -1,0 +1,8 @@
+/home/akash/alpaka_kernels/build-cuda/CMakeFiles/edit_cache.dir
+/home/akash/alpaka_kernels/build-cuda/CMakeFiles/rebuild_cache.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/relu_test.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/sigmoid_test.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/tanh_test.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/selu_test.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/edit_cache.dir
+/home/akash/alpaka_kernels/build-cuda/tests/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/g++ @CMakeFiles/tanh_test.dir/objects1.rsp -o tanh_test @CMakeFiles/tanh_test.dir/linkLibs.rsp -L"/usr/local/cuda-12.9/targets/x86_64-linux/lib/stubs" -L"/usr/local/cuda-12.9/targets/x86_64-linux/lib"
