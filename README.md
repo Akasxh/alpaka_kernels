@@ -1,3 +1,7 @@
+# Alpaka Kernels 
+
+currently working on  : softmax
+
 ### Currently all existing operators tested for CUDA
 
 ### To build and run :
