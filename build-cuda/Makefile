@@ -168,6 +168,19 @@ selu_test/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/selu_test.dir/build.make tests/CMakeFiles/selu_test.dir/build
 .PHONY : selu_test/fast
 
+#=============================================================================
+# Target rules for targets named transpose_test
+
+# Build rule for target.
+transpose_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transpose_test
+.PHONY : transpose_test
+
+# fast build rule for target.
+transpose_test/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/build
+.PHONY : transpose_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -180,6 +193,7 @@ help:
 	@echo "... selu_test"
 	@echo "... sigmoid_test"
 	@echo "... tanh_test"
+	@echo "... transpose_test"
 .PHONY : help
 
 

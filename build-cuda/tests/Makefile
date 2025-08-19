@@ -172,6 +172,20 @@ selu_test/fast:
 	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/selu_test.dir/build.make tests/CMakeFiles/selu_test.dir/build
 .PHONY : selu_test/fast
 
+# Convenience name for target.
+tests/CMakeFiles/transpose_test.dir/rule:
+	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/transpose_test.dir/rule
+.PHONY : tests/CMakeFiles/transpose_test.dir/rule
+
+# Convenience name for target.
+transpose_test: tests/CMakeFiles/transpose_test.dir/rule
+.PHONY : transpose_test
+
+# fast build rule for target.
+transpose_test/fast:
+	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/build
+.PHONY : transpose_test/fast
+
 relu_test.o: relu_test.cpp.o
 .PHONY : relu_test.o
 
@@ -268,6 +282,30 @@ tanh_test.cpp.s:
 	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tanh_test.dir/build.make tests/CMakeFiles/tanh_test.dir/tanh_test.cpp.s
 .PHONY : tanh_test.cpp.s
 
+transpose_test.o: transpose_test.cpp.o
+.PHONY : transpose_test.o
+
+# target to build an object file
+transpose_test.cpp.o:
+	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/transpose_test.cpp.o
+.PHONY : transpose_test.cpp.o
+
+transpose_test.i: transpose_test.cpp.i
+.PHONY : transpose_test.i
+
+# target to preprocess a source file
+transpose_test.cpp.i:
+	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/transpose_test.cpp.i
+.PHONY : transpose_test.cpp.i
+
+transpose_test.s: transpose_test.cpp.s
+.PHONY : transpose_test.s
+
+# target to generate assembly for a file
+transpose_test.cpp.s:
+	cd /home/akash/alpaka_kernels/build-cuda && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/transpose_test.cpp.s
+.PHONY : transpose_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -280,6 +318,7 @@ help:
 	@echo "... selu_test"
 	@echo "... sigmoid_test"
 	@echo "... tanh_test"
+	@echo "... transpose_test"
 	@echo "... relu_test.o"
 	@echo "... relu_test.i"
 	@echo "... relu_test.s"
@@ -292,6 +331,9 @@ help:
 	@echo "... tanh_test.o"
 	@echo "... tanh_test.i"
 	@echo "... tanh_test.s"
+	@echo "... transpose_test.o"
+	@echo "... transpose_test.i"
+	@echo "... transpose_test.s"
 .PHONY : help
 
 

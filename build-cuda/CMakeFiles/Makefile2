@@ -82,6 +82,7 @@ tests/all: tests/CMakeFiles/relu_test.dir/all
 tests/all: tests/CMakeFiles/sigmoid_test.dir/all
 tests/all: tests/CMakeFiles/tanh_test.dir/all
 tests/all: tests/CMakeFiles/selu_test.dir/all
+tests/all: tests/CMakeFiles/transpose_test.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -93,6 +94,7 @@ tests/clean: tests/CMakeFiles/relu_test.dir/clean
 tests/clean: tests/CMakeFiles/sigmoid_test.dir/clean
 tests/clean: tests/CMakeFiles/tanh_test.dir/clean
 tests/clean: tests/CMakeFiles/selu_test.dir/clean
+tests/clean: tests/CMakeFiles/transpose_test.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -198,6 +200,32 @@ selu_test: tests/CMakeFiles/selu_test.dir/rule
 tests/CMakeFiles/selu_test.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/selu_test.dir/build.make tests/CMakeFiles/selu_test.dir/clean
 .PHONY : tests/CMakeFiles/selu_test.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/transpose_test.dir
+
+# All Build rule for target.
+tests/CMakeFiles/transpose_test.dir/all:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akash/alpaka_kernels/build-cuda/CMakeFiles --progress-num=9,10 "Built target transpose_test"
+.PHONY : tests/CMakeFiles/transpose_test.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/transpose_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akash/alpaka_kernels/build-cuda/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/transpose_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akash/alpaka_kernels/build-cuda/CMakeFiles 0
+.PHONY : tests/CMakeFiles/transpose_test.dir/rule
+
+# Convenience name for target.
+transpose_test: tests/CMakeFiles/transpose_test.dir/rule
+.PHONY : transpose_test
+
+# clean rule for target.
+tests/CMakeFiles/transpose_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/transpose_test.dir/build.make tests/CMakeFiles/transpose_test.dir/clean
+.PHONY : tests/CMakeFiles/transpose_test.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

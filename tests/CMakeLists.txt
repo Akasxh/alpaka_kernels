@@ -24,4 +24,5 @@ add_kernel_test(relu)
 add_kernel_test(sigmoid)
 add_kernel_test(tanh)
 add_kernel_test(selu)
+add_kernel_test(transpose)
 

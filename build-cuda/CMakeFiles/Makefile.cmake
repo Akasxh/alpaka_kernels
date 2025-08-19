@@ -68,4 +68,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/sigmoid_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/tanh_test.dir/DependInfo.cmake"
   "tests/CMakeFiles/selu_test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/transpose_test.dir/DependInfo.cmake"
   )
